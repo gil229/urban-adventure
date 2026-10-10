@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kogido's Printing House : fabrication de cahiers cartonnés, personnalisation, cartonnage de livres et documents au Bénin.">
+  <title>Kogido's Printing House | Imprimerie au Bénin</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #202b3c;
+      line-height: 1.6;
+      background: #f7f8fc;
+    }
+    header {
+      background: #10264b;
+      color: white;
+      padding: 18px 6%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    header strong { font-size: 20px; }
+    nav { display: flex; gap: 16px; flex-wrap: wrap; }
+    nav a { color: white; text-decoration: none; font-size: 14px; }
+    .hero {
+      background: linear-gradient(135deg, #10264b, #176b87);
+      color: white;
+      padding: 72px 6%;
+      text-align: center;
+    }
+    .hero h1 { font-size: clamp(30px, 7vw, 48px); line-height: 1.2; }
+    .hero p { max-width: 650px; margin: 18px auto 28px; }
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 5px;
+    }
+    .btn-gold { background: #f4bd45; color: #172440; }
+    .btn-white { border: 1px solid white; color: white; }
+    section { padding: 48px 6%; }
+    .section-title { text-align: center; margin-bottom: 28px; }
+    .section-title h2 { color: #10264b; font-size: 29px; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 4px 16px #10264b0d;
+    }
+    .card .emoji { font-size: 34px; }
+    .card h3 { color: #176b87; }
+    .about {
+      background: white;
+      text-align: center;
+    }
+    .about p { max-width: 750px; margin: 12px auto; }
+    .training { background: #eaf2f7; }
+    .contact {
+      background: #10264b;
+      color: white;
+      text-align: center;
+    }
+    .contact h2 { color: white; }
+    .contact a { color: #f4bd45; overflow-wrap: anywhere; }
+    footer {
+      padding: 20px;
+      text-align: center;
+      background: #091831;
+      color: white;
+      font-size: 13px;
+    }
+    @media (max-width: 500px) {
+      header { justify-content: center; text-align: center; }
+      nav { justify-content: center; }
+      .hero { padding: 48px 5%; }
+      section { padding: 38px 5%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <strong>Kogido's Printing House</strong>
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="#services">Services</a>
+      <a href="#formations">Formations</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <h1>Vos idées prennent forme avec Kogido's !</h1>
+      <p>
+        Votre partenaire en fabrication de cahiers cartonnés,
+        personnalisation, cartonnage de livres et documents au Bénin.
+      </p>
+      <a class="btn btn-gold"
+         href="https://wa.me/2290198263364?text=Bonjour%20Kogido%27s%20Printing%20House%2C%20je%20souhaite%20un%20devis."
+         target="_blank" rel="noopener">Demander un devis</a>
+      <a class="btn btn-white" href="#services">Découvrir nos services</a>
+    </section>
+
+    <section id="services">
+      <div class="section-title">
+        <h2>Nos services</h2>
+        <p>Des solutions adaptées aux particuliers, écoles et entreprises.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="emoji">📚</div>
+          <h3>Cahiers cartonnés</h3>
+          <p>Fabrication de cahiers avec couverture cartonnée, solides et pratiques.</p>
+        </article>
+        <article class="card">
+          <div class="emoji">🎨</div>
+          <h3>Personnalisation</h3>
+          <p>Cahiers personnalisés selon vos besoins, votre nom ou votre marque.</p>
+        </article>
+        <article class="card">
+          <div class="emoji">📖</div>
+          <h3>Cartonnage de livres</h3>
+          <p>Reliure et cartonnage de livres, documents et ouvrages.</p>
+        </article>
+        <article class="card">
+          <div class="emoji">🗂️</div>
+          <h3>Registres et documents</h3>
+          <p>Confection et cartonnage de registres de commande et autres documents professionnels.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="apropos">
+      <div class="section-title">
+        <h2>À propos de nous</h2>
+      </div>
+      <p>
+        Kogido's Printing House est une initiative dédiée à la fabrication
+        de cahiers, à la personnalisation et aux travaux de cartonnage.
+        Notre ambition est de proposer des solutions utiles, soignées
+        et accessibles au Bénin.
+      </p>
+      <p><strong>Notre engagement :</strong> créativité, qualité et satisfaction du client.</p>
+    </section>
+
+    <section class="training" id="formations">
+      <div class="section-title">
+        <h2>Formations et apprentissage</h2>
+        <p>
+          Nous souhaitons développer un espace d'apprentissage autour
+          des métiers de l'imprimerie, du cartonnage et de la personnalisation.
+        </p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <h3>Initiation à l'imprimerie</h3>
+          <p>Découvrez les techniques et les étapes de fabrication des supports imprimés.</p>
+        </article>
+        <article class="card">
+          <h3>Sérigraphie</h3>
+          <p>Un futur parcours d'apprentissage consacré à la personnalisation des supports.</p>
+        </article>
+      </div>
+      <p style="text-align:center;margin-top:20px">
+        <strong>Intéressé(e) ? Contactez-nous pour exprimer vos besoins.</strong>
+      </p>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section-title">
+        <h2>Contactez-nous</h2>
+        <p>Parlons de votre projet et préparons votre devis.</p>
+      </div>
+      <p>📍 Zone desservie : Bénin</p>
+      <p>📱 WhatsApp : <a href="https://wa.me/2290198263364">Nous écrire sur WhatsApp</a></p>
+      <p>✉️ E-mail :
+        <a href="mailto:kodjodonon@gmail.com">kodjodonon@gmail.com</a>
+      </p>
+      <a class="btn btn-gold"
+         href="https://wa.me/2290198263364?text=Bonjour%2C%20je%20veux%20des%20informations%20sur%20vos%20services."
+         target="_blank" rel="noopener">Écrivez-nous maintenant</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year">2026</span> Kogido's Printing House. Tous droits réservés.</p>
+    <p>Créativité · Impression · Cartonnage</p>
+  </footer>
+</body>
+            </html>
+            
